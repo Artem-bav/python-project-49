@@ -12,3 +12,7 @@ publish: # проверка оформл пакета и публикац на P
 	
 package-install: # установим собранный пакет в систему
 	python3 -m pip install --user dist/*.whl
+	
+# <название Makefile>  (START makefile) 
+make lint: # проверка содержимого директории brain_games на соответствие правилам написания кода
+	poetry run flake8 brain_games
