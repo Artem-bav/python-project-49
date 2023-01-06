@@ -9,6 +9,7 @@ def logic_f():
     
 def hello_name():
     import prompt
+    global name # принудительно обращаемся к глобальной переменной name
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
@@ -18,11 +19,11 @@ def question_calc():
     import random
     import prompt
     answer = 0
-    i = 0
+    i = 0   #чтобы не обнулялось при каждом вхождении в функц
+    #############new_name = name
     print('What is the result of the expression?')
     signs = "*+-"
-    dif_signs = random.choice(signs)
-    print(dif_signs)
+    dif_signs = random.choice(signs) # случайный выбор знака
     a = random.randint(0, 100)
     b = random.randint(0, 100)
     if dif_signs == '+':
@@ -32,23 +33,21 @@ def question_calc():
     else:
         c = a * b
     print(f'c = {c}')
-    #rez = a dif_signs b
-    #print(f'rez = {rez}')
     print(f'Question: {a} {dif_signs} {b}')
-    answer = prompt.string('Your answer: ')
+    answer = prompt.string('Your answer: ') # присвоили переменной введенный ответ
     print(answer)
-    
     if c == int(answer):
         print('Correct!')
-        i += 1
+        i = 1
     else:
         print(f"""Question: {a} {dif_signs} {b}
 Your answer: {answer}
-'{answer}' is wrong answer ;(. Correct answer was '{c}.
-Let's try again, !""")
-        i = 4
+'{answer}' is wrong answer ;(. Correct answer was '{c}'.
+Let's try again, {name}!""")
+        i = 0
     print(i)
-    dif_signs = ''
+    return answer, i
+    dif_signs = '' # очистка переменной 
     
    
    
