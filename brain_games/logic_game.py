@@ -11,6 +11,7 @@ def hello_name():
     import prompt
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+    return name
     
 def question_calc():
     # print('Answer "yes" if the number is even, otherwise answer "no".')
