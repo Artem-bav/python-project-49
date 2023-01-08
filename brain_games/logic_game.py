@@ -164,7 +164,7 @@ def question_prime():
     if number % 5 == 0 and number != 5:
         rez = 'no'
         r = 1
-    list_number = [3, 7, 9, 11, 13, 17, 19]
+    list_number = [3, 7, 9, 11, 13, 17, 19, 21, 23, 27, 29, 31, 33, 37, 39, 41, 43, 47, 49, 51]
     len_list = len(list_number)
     x = 0
     if r == 0:
