@@ -1,7 +1,7 @@
 def hello_name():
 
     import prompt
-    global name  # принудительно обращаемся к глобальной переменной name
+    global name  # принудительно обращ к глоб перем name
     name = prompt.string('May I have your name? ')
     print(f'''Hello, {name}!
 What is the result of the expression?''')
@@ -11,10 +11,20 @@ What is the result of the expression?''')
 def hello_name_gcd():
 
     import prompt
-    global name  # принудительно обращаемся к глобальной переменной name
+    global name  # принудительно обращ к глоб перем name
     name = prompt.string('May I have your name? ')
     print(f'''Hello, {name}!
 Find the greatest common divisor of given numbers.''')
+    return name
+
+
+def hello_name_progression():
+
+    import prompt
+    global name  # принудительно обращ к глоб перем name
+    name = prompt.string('May I have your name? ')
+    print(f'''Hello, {name}!
+What number is missing in the progression?''')
     return name
 
 
@@ -77,6 +87,49 @@ def question_gcd():
         i = 1
     else:
         print(f"""Question: {a} {b}
+Your answer: {answer}
+'{answer}' is wrong answer ;(. Correct answer was '{rez}'.
+Let's try again, {name}!""")
+        i = 4
+    return i
+
+
+def question_progression():
+
+    import random
+    import prompt
+    answer = 0
+    i = 0
+    rez = 0  # переменная для скрытой цифры
+    n = 1  # переменная формирования прогрессии
+    str_prog = ''
+    lenn = random.randint(5, 10)  # случайная длина
+    hidden = random.randint(1, lenn)  # случайная скрытая
+    start = random.randint(1, 20)  # случайная первая в последователности
+    plus = random.randint(2, 5)
+    while n < (lenn + 1):
+        if n == 1:
+            if n == hidden:
+                str_prog = str('..') + str(' ')
+                rez = start
+            else:
+                str_prog = str(start) + str(' ')
+            next = start + plus
+        else:
+            if n == hidden:
+                str_prog = str(str_prog) + str('..') + str(' ')
+                rez = next
+            else:
+                str_prog = str(str_prog) + str(next) + str(' ')
+            next += plus
+        n += 1
+    print(f'Question: {str_prog}   (  :) {rez})')
+    answer = prompt.string('Your answer: ')  # присв переменной введ ответ
+    if rez == int(answer):
+        print('Correct!')
+        i = 1
+    else:
+        print(f"""Question: {str_prog}
 Your answer: {answer}
 '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
 Let's try again, {name}!""")
