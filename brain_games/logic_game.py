@@ -28,6 +28,16 @@ What number is missing in the progression?''')
     return name
 
 
+def hello_name_prime():
+
+    import prompt
+    global name  # принудительно обращ к глоб перем name
+    name = prompt.string('May I have your name? ')
+    print(f'''Hello, {name}!
+Answer "yes" if given number is prime. Otherwise answer "no".''')
+    return name
+
+
 def question_calc():
 
     import random
@@ -130,6 +140,49 @@ def question_progression():
         i = 1
     else:
         print(f"""Question: {str_prog}
+Your answer: {answer}
+'{answer}' is wrong answer ;(. Correct answer was '{rez}'.
+Let's try again, {name}!""")
+        i = 4
+    return i
+
+
+def question_prime():
+    import random
+    import prompt
+    r = 0  # проходной коэфф в цикл while
+    number = random.randint(2, 1000)  # случайное число
+    if number == 2:
+        rez = 'yes'
+        r = 1
+    if number % 2 == 0 and number != 2:
+        rez = 'no'
+        r = 1
+    if number == 5:
+        rez = 'yes'
+        r = 1
+    if number % 5 == 0 and number != 5:
+        rez = 'no'
+        r = 1
+    list_number = [3, 7, 9, 11, 13, 17, 19]
+    len_list = len(list_number)
+    x = 0
+    if r == 0:
+        while x < len_list:
+            if number % list_number[x] == 0 and number != list_number[x]:
+                rez = 'no'
+                x = len_list  # просто выходим из цикла
+            else:
+                rez = 'yes'
+                x += 1
+    answer = 0
+    print(f'Question: {number}   (  :) {rez})')
+    answer = prompt.string('Your answer: ')  # присв переменной введ ответ
+    if rez == answer:
+        print('Correct!')
+        i = 1
+    else:
+        print(f"""Question: {number}
 Your answer: {answer}
 '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
 Let's try again, {name}!""")
