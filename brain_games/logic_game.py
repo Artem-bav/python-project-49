@@ -150,31 +150,15 @@ Let's try again, {name}!""")
 def question_prime():
     import random
     import prompt
-    r = 0  # проходной коэфф в цикл while
     number = random.randint(2, 1000)  # случайное число
-    if number == 2:
+    r = 0  # счетчик количества делителей
+    for i in range(2, number // 2 + 1):
+        if (number % i == 0):
+            r += 1
+    if (r <= 0):
         rez = 'yes'
-        r = 1
-    if number % 2 == 0 and number != 2:
+    else:
         rez = 'no'
-        r = 1
-    if number == 5:
-        rez = 'yes'
-        r = 1
-    if number % 5 == 0 and number != 5:
-        rez = 'no'
-        r = 1
-    list_number = [3, 7, 9, 11, 13, 17, 19, 21, 23, 27, 29, 31, 33, 37, 39, 41, 43, 47, 49, 51]
-    len_list = len(list_number)
-    x = 0
-    if r == 0:
-        while x < len_list:
-            if number % list_number[x] == 0 and number != list_number[x]:
-                rez = 'no'
-                x = len_list  # просто выходим из цикла
-            else:
-                rez = 'yes'
-                x += 1
     answer = 0
     print(f'Question: {number}   (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ

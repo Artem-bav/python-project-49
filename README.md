@@ -11,4 +11,4 @@ https://asciinema.org/a/QIXynmNNC8UVCS7KZNCwasKri
 # my asciinema progression
 https://asciinema.org/a/UKXUKBZbxSxKyiLG4scHgh9QD
 # my asciinema prime
- https://asciinema.org/a/gQ4p0PlyHBcXxpTSnY2nQ4Pes
+https://asciinema.org/a/SV3Ho4AZLWnUlw4Cytb327eK8
