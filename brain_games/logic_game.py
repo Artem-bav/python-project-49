@@ -167,7 +167,7 @@ def question_prime():
                 rez = 'no'
                 break
     answer = 0
-    print(f'Question: {number}   (  :) {rez})')
+    print(f'Question: {number}')  # (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if rez == str(answer):
         print('Correct!')
