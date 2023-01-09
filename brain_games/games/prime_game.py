@@ -1,7 +1,7 @@
 def prime_user():
 
     from brain_games import logic_game
-    name = logic_game.hello_name_prime()  # name получ знач RETURNA функц
+    name = logic_game.hello_nameprime()  # name получ знач RETURNA функц
     counter_i = 0
     while counter_i <= 2:
         i = logic_game.question_prime()  # выполнил функц и присвоил

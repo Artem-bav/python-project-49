@@ -28,7 +28,7 @@ What number is missing in the progression?''')
     return name
 
 
-def hello_name_prime():
+def hello_nameprime():
 
     import prompt
     global name  # принудительно обращ к глоб перем name
@@ -169,7 +169,7 @@ def question_prime():
     answer = 0
     print(f'Question: {number}  (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
-    if rez == str(answer):
+    if rez == answer:
         print('Correct!')
         i = 1
     else:
