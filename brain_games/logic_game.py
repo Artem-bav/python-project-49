@@ -161,13 +161,13 @@ def question_prime():
         rez = 'no'
         r = 1
     if r == 0:
-        for i in range(3, int(sqrt(number)), 2):
+        for i in range(3, int(number/2), 2):  # for i in range(3, int(sqrt(number)), 2):
             print(i)
             if number % i == 0:
                 rez = 'no'
                 break
     answer = 0
-    print(f'Question: {number}')  # (  :) {rez})')
+    print(f'Question: {number}  (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if rez == str(answer):
         print('Correct!')
