@@ -148,21 +148,27 @@ Let's try again, {name}!""")
 
 
 def question_prime():
-    import random
     import prompt
+    import random
+    from math import sqrt
     number = random.randint(2, 1000)  # случайное число
-    r = 0  # счетчик количества делителей
-    for i in range(2, number // 2 + 1):
-        if (number % i == 0):
-            r += 1
-    if (r <= 0):
+    r = 0
+    if number == 2 or number == 3:
         rez = 'yes'
-    else:
+        r = 1
+    elif number % 2 == 0 and number != 2:
         rez = 'no'
+        r = 1
+    if r == 0:
+        rez = 'yes'
+        for i in range(3, int(sqrt(number) + 1), 2):
+            if number % i == 0:
+                rez = 'no'
+                break
     answer = 0
     print(f'Question: {number}   (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
-    if rez == answer:
+    if rez == str(answer):
         print('Correct!')
         i = 1
     else:
