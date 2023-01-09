@@ -153,6 +153,7 @@ def question_prime():
     from math import sqrt
     number = random.randint(2, 1000)  # случайное число
     r = 0
+    rez = 'yes'
     if number == 2 or number == 3:
         rez = 'yes'
         r = 1
@@ -160,8 +161,8 @@ def question_prime():
         rez = 'no'
         r = 1
     if r == 0:
-        rez = 'yes'
-        for i in range(3, int(sqrt(number) + 1), 2):
+        for i in range(3, int(sqrt(number)), 2):
+            print(i)
             if number % i == 0:
                 rez = 'no'
                 break
