@@ -154,7 +154,7 @@ def question_prime():
     number = random.randint(2, 1000)  # случайное число
     r = 0
     #rez = ''
-    i = 1
+    k = 1
     #if number == 2:
     #if number == 2 or number == 3 or number == 5 or number == 7:
     #    rez = 'yes'  # число простое
@@ -163,10 +163,10 @@ def question_prime():
      #   rez = 'no'
      #   r = 1
     #if r == 0:
-    while i <= number:
-        if number % i == 0:
+    while k <= number:
+        if number % k == 0:
             r += 1
-        i += 1
+        k += 1
     if r == 2:
         rez = 'yes'
     else:
