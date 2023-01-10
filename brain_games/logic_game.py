@@ -180,12 +180,12 @@ def question_prime():
          #   if number % i == 0:
          #       rez = 'no'
           #      break
-    answer = 0
+    answer = ''
     print(f'Question: {number}  (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     #print(type(answer))
     #print(type(rez))
-    if rez == answer:
+    if rez == str(answer):
         print('Correct!')
         i = 1
     else:
