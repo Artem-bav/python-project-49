@@ -80,19 +80,32 @@ def question_gcd():
     i = 0
     a = random.randint(1, 100)
     b = random.randint(1, 100)
+    x = 0
+    y = 0
+    rez = 0
     if a > b:
-        x = a
+        x = a  # x большее число
         y = b
-    else:
+    if a > b:
         x = b
         y = a
-    z = x % y
-    rez = y
-    while z > 0:
-        x = y
-        y = z
-        z = x % y
-        rez = y
+    for w in range(y, 0, -1): 
+        if y % w == 0 and x % w == 0:
+            rez = w
+            break
+    #if a > b:
+    #    x = a
+    #    y = b
+    #else:
+    #    x = b
+    #    y = a
+    #z = x % y
+    #rez = y
+    #while z > 0:
+    #    x = y
+    #    y = z
+    #    z = x % y
+    #    rez = y
     print(f'Question: {x} {y} , (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if rez == int(answer):
