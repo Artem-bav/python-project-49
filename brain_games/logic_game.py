@@ -52,11 +52,8 @@ def question_calc():
         c = a + b
     elif dif_signs == '-':
         c = a - b
-    elif dif_signs == '*':
+    else:
         c = a * b
-    
-    #else:
-    #    c = a * b
     print(f'Question: {a} {dif_signs} {b} , (  :) {c})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if c == int(answer):
@@ -83,37 +80,17 @@ def question_gcd():
     x = 0
     y = 0
     rez = 0
-    if a == b == 0:
-        rez = 0
-    else:
-        if a > b:
-            x = a  # x большее число
-            y = b
-        if a < b:
-            x = b
-            y = a
-    
-        for w in range(y, 0, -1):
-            #print(w)
-            if y % w == 0 and x % w == 0:
-                rez = w
-                break
-    
-    #if a > b:
-    #    x = a
-    #    y = b
-    #else:
-    #    x = b
-    #    y = a
-    #z = x % y
-    #rez = y
-    #while z > 0:
-    #    x = y
-    #    y = z
-    #    z = x % y
-    #    rez = y
+    if a > b:
+        x = a  # x большее число
+        y = b
+    if a < b:
+        x = b
+        y = a
+    for w in range(y, 0, -1):
+        if y % w == 0 and x % w == 0:
+            rez = w
+            break
     print(f'Question: {x} {y} , (  :) {rez})')
-    
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if rez == int(answer):
         print('Correct!')
@@ -173,33 +150,17 @@ Let's try again, {name}!""")
 def question_prime():
     import prompt
     import random
-    from math import sqrt
     number = random.randint(2, 1000)  # случайное число
     r = 0
     rez = 'no'
-    k = 1
     if number == 2 or number == 3 or number == 5 or number == 7:
-    #if number == 2  :
-        print('pppppppp')
         rez = 'yes'  # число простое
         r = 1
     if number % 2 == 0 and number != 2:
-        print('RRRRRRR')
         rez = 'no'
         r = 1
     if r == 0:
-        print('FFFFFFFFFFF')
-    #while k <= number:
-     #   if number % k == 0:
-      #      r += 1    
- #       print(k)
-  #      k += 1
-   #     if r == 2:
-    #        rez = 'yes'
-     #       break
-      #  else:
-       #     rez = 'no'
-        for i in range(3, int(number/2), 2):  # for i in range(3, int(sqrt(number)), 2):
+        for i in range(3, int(number/2), 2):
             print(i)
             print(int(number/2))
             print(number % i)
@@ -208,12 +169,9 @@ def question_prime():
                 break
             else:
                 rez = 'yes'
-                
     answer = ''
     print(f'Question: {number}  (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
-    #print(type(answer))
-    #print(type(rez))
     if rez == str(answer):
         print('Correct!')
         i = 1
