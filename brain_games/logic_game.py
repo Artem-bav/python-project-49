@@ -52,8 +52,11 @@ def question_calc():
         c = a + b
     elif dif_signs == '-':
         c = a - b
-    else:
+    elif dif_signs == '*':
         c = a * b
+    
+    #else:
+    #    c = a * b
     print(f'Question: {a} {dif_signs} {b} , (  :) {c})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if c == int(answer):
@@ -168,7 +171,7 @@ def question_prime():
         print('FFFFFFFFFFF')
     #while k <= number:
      #   if number % k == 0:
-      #      r += 1
+      #      r += 1    
  #       print(k)
   #      k += 1
    #     if r == 2:
