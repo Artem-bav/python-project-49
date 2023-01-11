@@ -83,16 +83,22 @@ def question_gcd():
     x = 0
     y = 0
     rez = 0
-    if a > b:
-        x = a  # x большее число
-        y = b
-    if a > b:
-        x = b
-        y = a
-    for w in range(y, 0, -1): 
-        if y % w == 0 and x % w == 0:
-            rez = w
-            break
+    if a == b == 0:
+        rez = 0
+    else:
+        if a > b:
+            x = a  # x большее число
+            y = b
+        if a < b:
+            x = b
+            y = a
+    
+        for w in range(y, 0, -1):
+            print(w) 
+            if y % w == 0 and x % w == 0:
+                rez = w
+                break
+    
     #if a > b:
     #    x = a
     #    y = b
