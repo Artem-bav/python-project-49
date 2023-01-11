@@ -160,9 +160,9 @@ def question_prime():
         rez = 'no'
         r = 1
     if r == 0:
-        for i in range(3, int(number/2), 2):
+        for i in range(3, int(number / 2), 2):
             print(i)
-            print(int(number/2))
+            print(int(number / 2))
             print(number % i)
             if number % i == 0:
                 rez = 'no'
