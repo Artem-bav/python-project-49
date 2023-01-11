@@ -153,33 +153,39 @@ def question_prime():
     from math import sqrt
     number = random.randint(2, 1000)  # случайное число
     r = 0
-    #rez = ''
+    rez = 'no'
     k = 1
-    #if number == 2:
-    #if number == 2 or number == 3 or number == 5 or number == 7:
-    #    rez = 'yes'  # число простое
-    #    r = 1
-    #elif number % 2 == 0 and number != 2:
-     #   rez = 'no'
-     #   r = 1
-    #if r == 0:
-    while k <= number:
-        if number % k == 0:
-            r += 1
-        k += 1
-    if r == 2:
-        rez = 'yes'
-    else:
+    if number == 2 or number == 3 or number == 5 or number == 7:
+    #if number == 2  :
+        print('pppppppp')
+        rez = 'yes'  # число простое
+        r = 1
+    if number % 2 == 0 and number != 2:
+        print('RRRRRRR')
         rez = 'no'
-                    
-        
-        
-        
-        #for i in range(9, int(number/2), 2):  # for i in range(3, int(sqrt(number)), 2):
-        #    print(i)
-         #   if number % i == 0:
-         #       rez = 'no'
-          #      break
+        r = 1
+    if r == 0:
+        print('FFFFFFFFFFF')
+    #while k <= number:
+     #   if number % k == 0:
+      #      r += 1
+ #       print(k)
+  #      k += 1
+   #     if r == 2:
+    #        rez = 'yes'
+     #       break
+      #  else:
+       #     rez = 'no'
+        for i in range(3, int(number/2), 2):  # for i in range(3, int(sqrt(number)), 2):
+            print(i)
+            print(int(number/2))
+            print(number % i)
+            if number % i == 0:
+                rez = 'no'
+                break
+            else:
+                rez = 'yes'
+                
     answer = ''
     print(f'Question: {number}  (  :) {rez})')
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
