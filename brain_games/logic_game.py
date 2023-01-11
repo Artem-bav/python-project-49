@@ -94,7 +94,7 @@ def question_gcd():
             y = a
     
         for w in range(y, 0, -1):
-            print(w)
+            #print(w)
             if y % w == 0 and x % w == 0:
                 rez = w
                 break

@@ -1,7 +1,7 @@
 def gcd_user():
 
     from brain_games import logic_game
-    name = logic_game.hello_name()  # перем name получ знач RETURNA функц
+    name = logic_game.hello_name_gcd()  # перем name получ знач RETURNA функц
     counter_i = 0
     while counter_i <= 2:
         i = logic_game.question_gcd()  # выполнил функц и присвоил
