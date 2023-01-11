@@ -94,7 +94,7 @@ def question_gcd():
             y = a
     
         for w in range(y, 0, -1):
-            print(w) 
+            print(w)
             if y % w == 0 and x % w == 0:
                 rez = w
                 break
@@ -113,6 +113,7 @@ def question_gcd():
     #    z = x % y
     #    rez = y
     print(f'Question: {x} {y} , (  :) {rez})')
+    
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     if rez == int(answer):
         print('Correct!')
