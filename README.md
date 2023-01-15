@@ -8,7 +8,6 @@
 
 
 
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=ПРОВЕРКА_НА_ЧЕТНОСТЬ)](https://asciinema.org/a/WxFrv9Vo241nB2lULlV5oZtM6)
 
 
