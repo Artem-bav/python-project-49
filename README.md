@@ -6,7 +6,11 @@
 
 примеры игры
 
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=ПРОВЕРКА НА ЧЕТНОСТЬ)](https://asciinema.org/a/WxFrv9Vo241nB2lULlV5oZtM6)
+
+
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=КАЛЬКУЛЯТОР)](https://asciinema.org/a/aa42Ad1igMSTfdZkA4F7z76z8)
 
 
