@@ -11,7 +11,7 @@
 
 ### _*Для установки Brain Games:*_
  + загрузите пакет на свой компьютер<br/>
- + введите в своем терминале команду: pip install brain-games --user
+ + введите в терминале команду: pip install brain-games --user
 
 ### _*Для запуска игры:*_<br> 
 * введите в командную строку терминала команду, соответствующую выбранной игре:
@@ -25,7 +25,7 @@
 ><li>Игра "ПРОСТОЕ ЛИ ЧИСЛО"          - команда: brain-prime</li>
 ***
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=ПРИМЕР ИГРЫ ПРОВЕРКА НА ЧЕТНОСТЬ)](https://asciinema.org/a/WxFrv9Vo241nB2lULlV5oZtM6)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&amp;lines=ПРИМЕР%20ИГРЫ%20ПРОВЕРКА%20НА%20ЧЕТНОСТЬ)](https://asciinema.org/a/WxFrv9Vo241nB2lULlV5oZtM6)
 
 [пример игры  
 **_КАЛЬКУЛЯТОР_**](https://asciinema.org/a/aa42Ad1igMSTfdZkA4F7z76z8)
