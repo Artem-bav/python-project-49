@@ -1,5 +1,5 @@
 def main():
-    from brain_games.games.calc___game import calc___user
+    from brain_games.games import calc___game
     calc___user()
 
 
