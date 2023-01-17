@@ -1,4 +1,4 @@
-def calc___game():
+def calc___user():
 
 
     import prompt  # ожидание ввода
