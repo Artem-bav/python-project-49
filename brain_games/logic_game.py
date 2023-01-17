@@ -7,7 +7,6 @@ def hello_name():
 What is the result of the expression?''')
     return name
 
-
 def hello_name_gcd():
 
     import prompt
