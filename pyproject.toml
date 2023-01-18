@@ -14,19 +14,17 @@ prompt = "^0.4.1"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
-<<<<<<< HEAD
-brain-calc = "brain_games.scripts.brain_calc:main"
-brain-gcd = "brain_games.scripts.brain_gcd:main"
-brain-progression = "brain_games.scripts.brain_progression:main"
-brain-prime = "brain_games.scripts.brain_prime:main"
-brain-ccalc = "brain_games.scripts.brain_ccalc:main"
-=======
-brain-calc = "brain_games.scripts.brain_calc:main"
+#brain-calc = "brain_games.scripts.brain_calc:main"
+#brain-gcd = "brain_games.scripts.brain_gcd:main"
+#brain-progression = "brain_games.scripts.brain_progression:main"
+#brain-prime = "brain_games.scripts.brain_prime:main"
+#brain-ccalc = "brain_games.scripts.brain_ccalc:main"
+#brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
 brain---calc = "brain_games.scripts.brain___calc:main"
->>>>>>> parent of 9870009 (правка .toml)
+
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
