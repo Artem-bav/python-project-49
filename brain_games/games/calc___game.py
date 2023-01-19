@@ -21,9 +21,8 @@ What is the result of the expression?''')
         else:
             c = a * b
         print(f'Question: {a} {dif_signs} {b} , (  :) {c})')
-        answer = int(prompt.string('Your answer: '))  # присв переменной введ ответ
+        answer = int(prompt.string('Your answer: '))  # перем->ответ
         if c == answer:
-        # if c == int(answer):
             print('Correct!')
             counter_i += 1
         else:

@@ -36,4 +36,3 @@ Let's try again, {name}!""")
             break
         if counter_i == 3:
             print(f'Congratulations, {name}!')
-
