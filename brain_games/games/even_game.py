@@ -1,4 +1,4 @@
-def even___user():
+def even_user():
     import prompt  # ожидание ввода
     import random  # случайный выбор
     print('Welcome to the Brain Games!')

@@ -1,4 +1,4 @@
-def progression___user():
+def progression_user():
     import prompt  # ожидание ввода
     import random  # случайный выбор
     print('Welcome to the Brain Games!')
@@ -8,7 +8,6 @@ What number is missing in the progression?''')
     counter_i = 0  # счетчик правильных ответов
     while counter_i <= 2:
         answer = 0
-        counter_i = 0
         rez = 0  # переменная для скрытой цифры
         n = 1  # переменная формирования прогрессии
         str_prog = ''

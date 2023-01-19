@@ -1,4 +1,4 @@
-def gcd___user():
+def gcd_user():
     import prompt  # ожидание ввода
     import random  # случайный выбор
     print('Welcome to the Brain Games!')
