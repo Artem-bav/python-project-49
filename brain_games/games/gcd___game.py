@@ -30,9 +30,9 @@ Find the greatest common divisor of given numbers.''')
             counter_i += 1
         else:
             print(f"""Question: {a} {b}
-        Your answer: {answer}
-        '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
-        Let's try again, {name}!""")
+Your answer: {answer}
+'{answer}' is wrong answer ;(. Correct answer was '{rez}'.
+Let's try again, {name}!""")
             break
         if counter_i == 3:
             print(f'Congratulations, {name}!')

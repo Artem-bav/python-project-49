@@ -39,7 +39,8 @@ What number is missing in the progression?''')
             print('Correct!')
             counter_i += 1
         else:
-        print(f"""Question: {str_prog}
+
+            print(f"""Question: {str_prog}
 Your answer: {answer}
 '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
 Let's try again, {name}!""")

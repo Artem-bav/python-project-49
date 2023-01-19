@@ -29,8 +29,8 @@ Answer "yes" if the number is even, otherwise answer "no".''')
                 break
             else:  # answer != 'yes' end answer != 'no'
                 print(f"""\'{answer}\' is wrong answer ;(.
-        Correct answer was different.
-        Let's try again, {name}!""")
+Correct answer was different.
+Let's try again, {name}!""")
                 break
         if counter_i == 3:
             print(f'Congratulations, {name}!')

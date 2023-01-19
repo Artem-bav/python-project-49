@@ -34,7 +34,7 @@ Answer "yes" if given number is prime. Otherwise answer "no".''')
             counter_i += 1
         else:
             print(f"""Question: {number}
-        Your answer: {answer}
+Your answer: {answer}
 '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
 Let's try again, {name}!""")
             break

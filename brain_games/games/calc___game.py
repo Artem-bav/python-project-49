@@ -10,6 +10,7 @@ What is the result of the expression?''')
         signs = "*+-"
         dif_signs = ''
         # answer = 0
+        answer = 0
         dif_signs = random.choice(signs)  # случайный выбор знака
         a = random.randint(0, 100)
         b = random.randint(0, 100)
@@ -21,7 +22,8 @@ What is the result of the expression?''')
             c = a * b
         print(f'Question: {a} {dif_signs} {b} , (  :) {c})')
         answer = prompt.string('Your answer: ')  # присв переменной введ ответ
-        if c == int(answer):
+        # if c == int(answer):
+        if c == answer:
             print('Correct!')
             counter_i += 1
         else:
