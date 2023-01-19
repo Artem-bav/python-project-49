@@ -4,6 +4,7 @@ def calc___user():
     import random  # случайный выбор
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
+    print(fHello, {name}!)
     print(f'''Hello, {name}!
 What is the result of the expression?''')
     counter_i = 0  # счетчик правильных ответов
