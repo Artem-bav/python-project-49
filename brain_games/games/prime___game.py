@@ -7,7 +7,7 @@ def prime___user():
 Answer "yes" if given number is prime. Otherwise answer "no".''')
     counter_i = 0  # счетчик правильных ответов
     number = random.randint(2, 1000)  # случайное число
-    r = 0 # есть ли результат, 1 - есть
+    r = 0  # есть ли результат, 1 - есть
     rez = 'no'
     while counter_i <= 2:
         if number == 2 or number == 3 or number == 5 or number == 7:
@@ -35,8 +35,8 @@ Answer "yes" if given number is prime. Otherwise answer "no".''')
         else:
             print(f"""Question: {number}
         Your answer: {answer}
-        '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
-        Let's try again, {name}!""")
+'{answer}' is wrong answer ;(. Correct answer was '{rez}'.
+Let's try again, {name}!""")
             break
         if counter_i == 3:
             print(f'Congratulations, {name}!')

@@ -40,9 +40,9 @@ What number is missing in the progression?''')
             counter_i += 1
         else:
             print(f"""Question: {str_prog}
-        Your answer: {answer}
-        '{answer}' is wrong answer ;(. Correct answer was '{rez}'.
-        Let's try again, {name}!""")
+Your answer: {answer}
+'{answer}' is wrong answer ;(. Correct answer was '{rez}'.
+Let's try again, {name}!""")
             break
         if counter_i == 3:
             print(f'Congratulations, {name}!')
