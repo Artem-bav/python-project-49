@@ -21,11 +21,11 @@ Answer "yes" if the number is even, otherwise answer "no".''')
         else:
             if answer == 'yes':
                 print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.
-        Let's try again, {name}!""")
+Let's try again, {name}!""")
                 break
             elif answer == 'no':
                 print(f"""'no' is wrong answer ;(. Correct answer was 'yes'.
-        Let's try again, {name}!""")
+Let's try again, {name}!""")
                 break
             else:  # answer != 'yes' end answer != 'no'
                 print(f"""\'{answer}\' is wrong answer ;(.
