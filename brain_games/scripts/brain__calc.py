@@ -1,6 +1,6 @@
 def main():
-    from brain_games.games.calc__game import calc__user
-    calc__user()
+    from brain_games.logic_games import calc__go
+    calc__go()
 
 
 if __name__ == '__main__':
