@@ -22,31 +22,19 @@ def even_go():
     name = even_game.even_user_hello()
     counter_i = 0  # счетчик правильных ответов
     while counter_i <= 2:
-        number, answer = even_game.even_answer()
-        if number % 2 == 0 and answer == 'yes':  # число четное
+        number, answer, correct_answer = even_game.even_answer()
+        if str(correct_answer) == answer:
             print('Correct!')
-            answer = ''
-            counter_i += 1
-        elif number % 2 != 0 and answer == 'no':  # число не четное
-            print('Correct!')
-            answer = ''
             counter_i += 1
         else:
-            if answer == 'yes':
-                print(f"""'yes' is wrong answer ;(. Correct answer was 'no'.
+            print(f"""Question: {number}'
+Your answer: {answer}
+'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
 Let's try again, {name}!""")
-                break
-            elif answer == 'no':
-                print(f"""'no' is wrong answer ;(. Correct answer was 'yes'.
-Let's try again, {name}!""")
-                break
-            else:  # answer != 'yes' end answer != 'no'
-                print(f"""\'{answer}\' is wrong answer ;(.
-Correct answer was different.
-Let's try again, {name}!""")
-                break
+            break
         if counter_i == 3:
             print(f'Congratulations, {name}!')
+        answer = ''
 
 
 def gcd_go():
