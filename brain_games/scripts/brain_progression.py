@@ -1,6 +1,6 @@
 def main():
-    from brain_games.games.progression_game import progression_user
-    progression_user()
+    from brain_games.logic_games import progression_go
+    progression_go()
 
 
 if __name__ == '__main__':

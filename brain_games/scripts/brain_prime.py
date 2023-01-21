@@ -1,6 +1,6 @@
 def main():
-    from brain_games.games.prime_game import prime_user
-    prime_user()
+    from brain_games.logic_games import prime_go
+    prime_go()
 
 
 if __name__ == '__main__':
