@@ -46,4 +46,6 @@
 **_ПРОСТОЕ ЛИ ЧИСЛО_**
 
 [![img.png](img.png)](https://asciinema.org/a/SV3Ho4AZLWnUlw4Cytb327eK8)
-[![таблица простых чисел.png](таблица простых чисел.png)](https://asciinema.org/a/SV3Ho4AZLWnUlw4Cytb327eK8)
+
+
+[![tabl.png](tabl.png)](https://asciinema.org/a/SV3Ho4AZLWnUlw4Cytb327eK8)
