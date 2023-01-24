@@ -45,7 +45,5 @@
 пример игры  
 **_ПРОСТОЕ ЛИ ЧИСЛО_**
 
-[![img.png](img.png)](https://asciinema.org/a/SV3Ho4AZLWnUlw4Cytb327eK8)
-
-
+для просмотра нажми на картинку
 [![tabl.png](tabl.png)](https://asciinema.org/a/SV3Ho4AZLWnUlw4Cytb327eK8)
