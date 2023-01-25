@@ -1,7 +1,5 @@
-from random import randint
-from random import choice
-
-
+import random
+import prompt
 a_task = 'What number is missing in the progression?'
 
 

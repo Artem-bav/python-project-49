@@ -1,11 +1,11 @@
-from random import randint
-from random import choice
-
-
+import random
+import prompt
 a_task = 'What is the result of the expression?'
 
 
 def question_answer():
+
+    
     signs = "*+-"
     dif_signs = ''
     dif_signs = random.choice(signs)  # случайный выбор знака
