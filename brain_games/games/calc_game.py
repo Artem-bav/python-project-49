@@ -1,11 +1,9 @@
 import random
-import prompt
 a_task = 'What is the result of the expression?'
 
 
 def question_answer():
 
-    
     signs = "*+-"
     dif_signs = ''
     dif_signs = random.choice(signs)  # случайный выбор знака
@@ -19,5 +17,5 @@ def question_answer():
         answer = a - b
     else:
         answer = a * b
-    question = (f'Question: {a} {dif_signs} {b} , (  :){answer}')  # , (  :){c})
+    question = (f'Question: {a} {dif_signs} {b}')  # , (  :){c})
     return question, str(answer)

@@ -1,5 +1,4 @@
 import random
-import prompt
 a_task = 'Find the greatest common divisor of given numbers.'
 
 
@@ -19,6 +18,5 @@ def question_answer():
         if y % w == 0 and x % w == 0:
             answer = w
             break
-    question = (f'Question: {x} {y}  (  :) {answer}   ')  # (  :) {rez})
-    answer = prompt.string('Your answer: ')  # присв переменной введ ответ
+    question = (f'Question: {x} {y}')  # (  :) {rez})
     return question, str(answer)

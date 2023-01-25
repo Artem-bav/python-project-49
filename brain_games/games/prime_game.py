@@ -1,5 +1,4 @@
 import random
-import prompt
 a_task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -20,5 +19,5 @@ def question_answer():
                 break
             else:
                 answer = 'yes'
-    question = (f'Question: {number}  (  :) {answer}' )  # (  :) {rez})
+    question = (f'Question: {number}')  # (  :) {rez})
     return question, str(answer)

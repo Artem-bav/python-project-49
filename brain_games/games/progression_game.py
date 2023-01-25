@@ -1,11 +1,10 @@
 import random
-import prompt
+
 a_task = 'What number is missing in the progression?'
 
 
 def question_answer():
     answer = 0
-    rez = 0  # переменная для скрытой цифры
     n = 1  # переменная формирования прогрессии
     str_prog = ''
     lenn = random.randint(5, 10)  # случайная длина
@@ -29,5 +28,5 @@ def question_answer():
                 str_prog = str(str_prog) + str(next_number) + str(' ')
             next_number += plus
         n += 1
-    question = (f'Question: {str_prog}  (  :) {answer} ')  # (  :) {rez})
+    question = (f'Question: {str_prog}')  # (  :) {rez})
     return question, str(answer)
