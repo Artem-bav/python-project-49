@@ -1,13 +1,14 @@
-def calc_user_hello():
-    import prompt  # ожидание ввода
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'''Hello, {name}!
-What is the result of the expression?''')
-    return name
+from random import randint
+from random import choice
+#import random  # случайный выбор
+#    import prompt  # ожидание ввода
 
 
-def calc_answer():
+a_task = 'What is the result of the expression?'
+
+
+
+def calc_question_answer():
     import random  # случайный выбор
     import prompt  # ожидание ввода
     signs = "*+-"
@@ -23,6 +24,6 @@ def calc_answer():
         c = a - b
     else:
         c = a * b
-    print(f'Question: {a} {dif_signs} {b}')  # , (  :){c})
+    question = (f'Question: {a} {dif_signs} {b}')  # , (  :){c})
     answer = prompt.string('Your answer: ')  # перем->ответ
-    return a, b, c, dif_signs, answer
+    return question, answer
