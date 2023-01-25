@@ -8,7 +8,7 @@ a_task = 'What is the result of the expression?'
 
 
 
-def calc_question_answer():
+def question_answer():
     import random  # случайный выбор
     import prompt  # ожидание ввода
     signs = "*+-"
@@ -19,11 +19,12 @@ def calc_question_answer():
     b = random.randint(0, 100)
     print(b)
     if dif_signs == '+':
-        c = a + b
+        answer = a + b
     elif dif_signs == '-':
-        c = a - b
+        answer = a - b
     else:
-        c = a * b
-    question = (f'Question: {a} {dif_signs} {b}')  # , (  :){c})
-    answer = prompt.string('Your answer: ')  # перем->ответ
-    return question, answer
+        answer = a * b
+    question = (f'Question: {a} {dif_signs} {b} , (  :){answer}')  # , (  :){c})
+
+    # answer = prompt.string('Your answer: ')  # перем->ответ
+    return question, str(answer)

@@ -8,10 +8,10 @@ counter_i = 3
 def go_game(game):
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    print(game.a_task)
+    print(game.a_task)  # что нужно сделать
     for _ in range(counter_i):
-        question, answer = game.calc_question_answer()
-        print(question, end='')
+        question, answer = game.question_answer()
+        print(question)
         user_answer = prompt.string('Your answer: ')
         if user_answer != answer:
             print(f"'{user_answer}' is wrong answer ;(.")

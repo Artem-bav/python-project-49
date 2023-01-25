@@ -1,6 +1,9 @@
+from brain_games.logic_games import go_game
+from brain_games.games import even_game
+
+
 def main():
-    from brain_games.logic_games import even_go
-    even_go()
+    go_game(even_game)
 
 
 if __name__ == '__main__':
