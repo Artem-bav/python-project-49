@@ -1,15 +1,11 @@
-def progression_user_hello():
-    import prompt  # ожидание ввода
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'''Hello, {name}!
-What number is missing in the progression?''')
-    return name
+from random import randint
+from random import choice
 
 
-def progression_answer():
-    import random  # случайный выбор
-    import prompt  # ожидание ввода
+a_task = 'What number is missing in the progression?'
+
+
+def question_answer():
     answer = 0
     rez = 0  # переменная для скрытой цифры
     n = 1  # переменная формирования прогрессии
@@ -23,18 +19,17 @@ def progression_answer():
         if n == 1:
             if n == hidden:
                 str_prog = str('..') + str(' ')
-                rez = start
+                answer = start
             else:
                 str_prog = str(start) + str(' ')
             next_number = start + plus
         else:
             if n == hidden:
                 str_prog = str(str_prog) + str('..') + str(' ')
-                rez = next_number
+                answer = next_number
             else:
                 str_prog = str(str_prog) + str(next_number) + str(' ')
             next_number += plus
         n += 1
-    print(f'Question: {str_prog}')  # (  :) {rez})
-    answer = prompt.string('Your answer: ')  # присв переменной введ ответ
-    return rez, str_prog, answer
+    question = (f'Question: {str_prog}  (  :) {answer} ')  # (  :) {rez})
+    return question, str(answer)

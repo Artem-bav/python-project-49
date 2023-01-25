@@ -1,16 +1,11 @@
 from random import randint
 from random import choice
-#import random  # случайный выбор
-#    import prompt  # ожидание ввода
 
 
 a_task = 'Find the greatest common divisor of given numbers.'
 
 
-
 def question_answer():
-    import random  # случайный выбор
-    import prompt  # ожидание ввода
     a = random.randint(1, 100)
     b = random.randint(1, 100)
     x = 0
@@ -27,6 +22,5 @@ def question_answer():
             answer = w
             break
     question = (f'Question: {x} {y}  (  :) {answer}   ')  # (  :) {rez})
-    #print(f'Question: {x} {y}')  # (  :) {rez})
     answer = prompt.string('Your answer: ')  # присв переменной введ ответ
     return question, str(answer)
