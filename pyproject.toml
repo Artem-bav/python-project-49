@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Artem-bav"]
+description = "mind game project"
+authors = "Artem-bav <tigra_bav@mail.ru>"
+repository = "https://github.com/Artem-bav/python-project-49"
+classifiers =  "Topic :: Primitive brain training games :: five different games"
 readme = "README.md"
 packages = [{include = "brain_games"}]
 
