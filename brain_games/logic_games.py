@@ -1,23 +1,24 @@
 import prompt
-from brain_games.cli import welcome_user
 
-counter_i = 3
+STEPS_TO_VICTORY = 3
+WORD_QUESTION = 'Question: '
 
 
-def go_game(game):
+def run_game(game):
     print('Welcome to the Brain Games!')
-    name = welcome_user()
-    print(game.a_task)  # что нужно сделать
-    for _ in range(counter_i):
-        question, answer = game.question_answer()
-        print(question)
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    print(game.task)  # что нужно сделать
+    for _ in range(STEPS_TO_VICTORY):
+        ask, answer = game.ask_answer()
+        print(WORD_QUESTION + ask)
         user_answer = prompt.string('Your answer: ')
-        if user_answer != answer:
+        if user_answer == answer:
+            print('Correct!')
+        elif user_answer != answer:
             print(f"'{user_answer}' is wrong answer ;(.")
             print(f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             break
-        elif user_answer == answer:
-            print('Correct!')
-        if counter_i == 3:
+        if STEPS_TO_VICTORY == 3:
             print(f"Congratulations, {name}!")

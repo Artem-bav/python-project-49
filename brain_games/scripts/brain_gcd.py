@@ -1,9 +1,9 @@
-from brain_games.logic_games import go_game
-from brain_games.games import gcd_game
+from brain_games.logic_games import run_game
+from brain_games.games import brain_gcd
 
 
 def main():
-    go_game(gcd_game)
+    run_game(brain_gcd)
 
 
 if __name__ == '__main__':

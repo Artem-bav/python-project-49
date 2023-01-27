@@ -1,9 +1,9 @@
 import random
 
-a_task = 'What number is missing in the progression?'
+task = 'What number is missing in the progression?'
 
 
-def question_answer():
+def ask_answer():
     answer = 0
     n = 1  # переменная формирования прогрессии
     str_prog = ''
@@ -28,5 +28,5 @@ def question_answer():
                 str_prog = str(str_prog) + str(next_number) + str(' ')
             next_number += plus
         n += 1
-    question = (f'Question: {str_prog}')  # (  :) {rez})
-    return question, str(answer)
+    ask = (str(str_prog) + str(answer))  # (  :) {answer})
+    return ask, str(answer)

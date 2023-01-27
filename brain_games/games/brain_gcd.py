@@ -1,8 +1,9 @@
 import random
-a_task = 'Find the greatest common divisor of given numbers.'
+
+task = 'Find the greatest common divisor of given numbers.'
 
 
-def question_answer():
+def ask_answer():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
     x = 0
@@ -18,5 +19,5 @@ def question_answer():
         if y % w == 0 and x % w == 0:
             answer = w
             break
-    question = (f'Question: {x} {y}')  # (  :) {rez})
-    return question, str(answer)
+    ask = (str(x) + ' ' + str(y))  # + ' ' + str(answer)
+    return ask, str(answer)

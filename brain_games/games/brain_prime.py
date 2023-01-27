@@ -1,8 +1,9 @@
 import random
-a_task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def question_answer():
+def ask_answer():
     r = 0  # есть ли результат, 1 - есть
     answer = 'no'
     number = random.randint(2, 1000)  # случайное число
@@ -19,5 +20,5 @@ def question_answer():
                 break
             else:
                 answer = 'yes'
-    question = (f'Question: {number}')  # (  :) {rez})
-    return question, str(answer)
+    ask = (str(number) + str(answer))  # (  :) {rez})
+    return ask, str(answer)
