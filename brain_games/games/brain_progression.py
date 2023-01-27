@@ -28,5 +28,5 @@ def ask_answer():
                 str_prog = str(str_prog) + str(next_number) + str(' ')
             next_number += plus
         n += 1
-    ask = (str(str_prog))  #  + str(answer)
+    ask = (str(str_prog))  # + str(answer)
     return ask, str(answer)
