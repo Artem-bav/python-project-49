@@ -9,9 +9,11 @@ def number_prime_test(number):
         return False
     for i in range(3, int(number / 2), 2):
         if number % i == 0:
-            return False
-    return True
-
+            answer = False
+            break
+        else:
+            answer = True
+    return answer
 
 def ask_answer():
     number = random.randint(2, 1000)  # случайное число
