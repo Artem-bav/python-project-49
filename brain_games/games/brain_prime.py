@@ -10,8 +10,7 @@ def number_prime_test(number):
     for i in range(3, int(number / 2), 2):
         if number % i == 0:
             return False
-        else:
-            return True
+    return True
 
 
 def ask_answer():
