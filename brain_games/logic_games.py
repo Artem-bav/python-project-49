@@ -19,6 +19,6 @@ def run_game(game):
             print(f"'{user_answer}' is wrong answer ;(.")
             print(f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
-            break
+            return
         if STEPS_TO_VICTORY == 3:
             print(f"Congratulations, {name}!")

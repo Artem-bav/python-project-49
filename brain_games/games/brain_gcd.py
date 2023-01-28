@@ -3,21 +3,21 @@ import random
 task = 'Find the greatest common divisor of given numbers.'
 
 
+def divisor_search(x, y):
+    if x > y:
+        big_number = x  # x большее число
+        small_number = y
+    if x < y:
+        big_number = y
+        small_number = x
+    for divider in range(small_number, 0, -1):
+        if small_number % divider == 0 and big_number % divider == 0:
+            return divider
+
+
 def ask_answer():
     a = random.randint(1, 100)
     b = random.randint(1, 100)
-    x = 0
-    y = 0
-    answer = 0
-    if a > b:
-        x = a  # x большее число
-        y = b
-    if a < b:
-        x = b
-        y = a
-    for w in range(y, 0, -1):
-        if y % w == 0 and x % w == 0:
-            answer = w
-            break
-    ask = (str(x) + ' ' + str(y))  # + ' ' + str(answer)
+    answer = divisor_search(a, b)
+    ask = (str(a) + ' ' + str(b))  # + ' ' + str(answer)
     return ask, str(answer)

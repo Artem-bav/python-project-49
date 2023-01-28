@@ -3,30 +3,31 @@ import random
 task = 'What number is missing in the progression?'
 
 
-def ask_answer():
-    answer = 0
-    n = 1  # переменная формирования прогрессии
-    str_prog = ''
-    lenn = random.randint(5, 10)  # случайная длина
-    hidden = random.randint(1, lenn)  # случайная скрытая
-    start = random.randint(1, 20)  # случайная первая в последователности
-    plus = random.randint(2, 5)
-    next_number = 0
-    while n < (lenn + 1):
-        if n == 1:
-            if n == hidden:
+def sequence_generator(lenn, start_number, plus, hidden):
+    element_number = 1  # переменная формирования прогрессии
+    while element_number < (lenn + 1):
+        if element_number == 1:
+            if element_number == hidden:
                 str_prog = str('..') + str(' ')
-                answer = start
+                answer = start_number
             else:
-                str_prog = str(start) + str(' ')
-            next_number = start + plus
+                str_prog = str(start_number) + str(' ')
+            next_number = start_number + plus
         else:
-            if n == hidden:
+            if element_number == hidden:
                 str_prog = str(str_prog) + str('..') + str(' ')
                 answer = next_number
             else:
                 str_prog = str(str_prog) + str(next_number) + str(' ')
             next_number += plus
-        n += 1
-    ask = (str(str_prog))  # + str(answer)
+        element_number += 1
+    return str_prog, answer
+
+
+def ask_answer():
+    lenn = random.randint(5, 10)  # случайная длина
+    start_number = random.randint(1, 20)  # случайная первая
+    plus = random.randint(2, 5)
+    hidden = random.randint(1, lenn)  # случайная скрытая
+    ask, answer = sequence_generator(lenn, start_number, plus, hidden)
     return ask, str(answer)
